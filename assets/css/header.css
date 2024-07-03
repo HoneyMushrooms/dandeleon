@@ -1,0 +1,70 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__container {
+    max-width: 1920px;
+    padding-left: 126px;
+    padding-right: 123px;
+    margin: 0 auto;
+}
+
+.header__row {
+    padding-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+.header__link {
+    font-family: Din Pro Lite;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16.11px;
+    color:rgba(53, 53, 53, 1);
+}
+
+.header__link.active {
+    color: rgba(232, 162, 145, 1);
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__group {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.header__btn {
+    border: 0.5px solid rgba(53, 53, 53, 1);
+    width: 169px;
+    height: 39px;
+    background-color: transparent;
+    border-radius: 3px;
+    font-family: Din Pro Lite;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16.11px;
+    color:rgba(53, 53, 53, 1);
+}
+
+
+
+
+
+

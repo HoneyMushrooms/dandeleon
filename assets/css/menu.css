@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: local('PF Regal Display Pro Regular'), local('PF-Regal-Display-Pro-Regular'),
+        url('../fonts/PFRegalDisplayPro-Regular.woff2') format('woff2'),
+        url('../fonts/PFRegalDisplayPro-Regular.woff') format('woff'),
+        url('../fonts/PFRegalDisplayPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.video {
+    position: relative;
+    z-index: -1;
+}
+
+.video-block {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.video__group {
+    position: absolute;
+    bottom: 61px;
+    left: 50.1%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+}
+
+.video__title {
+    font-family: PF Regal Display Pro;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 56.4px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.video__btn {
+    border: 0.5px solid rgba(53, 53, 53, 1);
+    width: 151px;
+    height: 39px;
+    border-radius: 3px;
+    font-family: Din Pro Lite;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16.11px;
+    color:rgba(53, 53, 53, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.info-1 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.info-1__title {
+    font-family: Din Pro Lite;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30.97px;
+    letter-spacing: 0.32em;
+    text-align: center;
+    margin-left: -0.5px;
+}
+
+.info-1 p {
+    font-family: Din Pro Medium;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37.23px;
+    text-align: center;
+    margin-left: -0.5px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+}
+
+.main-products__container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 43px 125px 100px 132px;
+    margin: 0 auto;
+}
+
+.main-products__column {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.main-products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.main-products__text {
+    font-family: Din Pro Medium;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31.03px;
+}
+
+.main-products__btns {
+    display: flex;
+    gap: 50px;
+}
+
+.main-products__swiper {
+    margin-bottom: 5px;
+}
+
+.main-products-card {
+    width: 410px !important;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-card__img-block {
+    position: relative;
+    width: 410px;
+    height: 591px;
+    overflow: hidden;
+}
+
+.product-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__description {
+    font-family: DIN Pro Lite;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.product-card__tag {
+    font-family: DIN Pro Lite;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgba(246, 58, 58, 1);
+}
+
+.product-card__price {
+    font-family: Din Pro Medium;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible !important;
+}
+
+.main-products__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-family: Din Pro Lite;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    color: rgba(44, 44, 44, 1);
+    margin-right: -1px;
+}
+
+.main-categories { 
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.main-categories a {
+    position: relative;
+}
+
+.main-categories__text {
+    position: absolute;
+    font-family: Din Pro Medium;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.62px;
+    text-align: left;
+    top: 21px;
+    left: 28px;
+    color: rgba(53, 53, 53, 1);
+    text-transform: uppercase;
+}
+
+.main-categories a:hover .main-categories__text {
+    color: rgba(232, 162, 145, 1);
+}
+
+.main-categories__row {
+    display: flex;
+}
+
+.row-top {
+    align-items: end;
+    gap: 12px;
+}
+
+.row-bottom {
+    align-items: flex-start;
+}
+
+.main-categories__photo-1 img {
+    max-width: 1096px;
+    max-height: 760px;
+    width: 100%;
+}
+
+.main-categories__photo-2 img {
+    max-width: 814px;
+    max-height: 662px;
+    width: 100%;
+}
+
+.main-categories__photo-3 img {
+    max-width: 437px;
+    max-height: 661px;
+    width: 100%;
+}
+
+.main-categories__photo-4 img {
+    max-width: 507px;
+    max-height: 761px;
+    width: 100%;
+}
+
+.main-categories__photo-5 img {
+    max-width: 950px;
+    max-height: 661px;
+    width: 100%;
+}
+
+.new-collection {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 100px 187px 100px 203px;
+}
+
+.new-collection__content {
+    display: flex;
+    gap: 57px;
+}
+
+.new-collection__title {
+    margin-top: 62px;
+    margin-bottom: 50px;
+    font-family: PF Regal Display Pro;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.new-collection__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 502px;
+}
+
+.new-collection__text {
+    font-family: Din Pro Lite;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 26.02px;
+    text-align: left;
+    margin-bottom: 49px;
+}
+
+.new-collection__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 181px;
+    height: 39px;
+    border-radius: 3px;
+    border: 0.5px solid rgba(44, 44, 44, 1);
+    font-family: Din Pro Lite;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.58px;
+    text-transform: uppercase;
+}
+
+.new-collection__img {
+    max-width: 970px;
+    max-height: 624px;
+}
+
+.new-collection__img img {
+    margin-top: -140px;
+    width: 100%;
+    z-index: -1;
+}
+
+.info-2 {
+    background-color: rgba(50, 58, 65, 1);
+}
+
+.info-2__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 158px 256px 262px 157px;
+    background-color: rgba(50, 58, 65, 1);
+    display: flex;
+    gap: 9px;
+    justify-content: space-between;
+}
+
+.info-2__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 552px;
+    gap: 323px;
+}
+
+.info-2__title {
+    font-family: Din Pro Lite;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 40.89px;
+    letter-spacing: 0.32em;
+    color: rgba(255, 250, 250, 1);
+}
+
+.info-2 p {
+    font-family: Din Pro Lite;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 28.5px;
+    color: rgba(255, 250, 250, 1);
+}    
+
+.info-2__group {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.info-2__btns {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+}
+
+.info-2__btn-lm {
+    display: flex;
+    width: 213px;
+    height: 55px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 1);    
+}
+
+.info-2__btn-wb {
+    width: 213px;
+    height: 55px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-2__btn {
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    width: 212px;
+    height: 55px;
+    border-radius: 3px 0px 0px 0px;
+    font-family: Din Pro Lite;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    align-self: flex-end;
+}
+
+.info-2__imgs {
+    position: relative;
+    flex: 1;
+}
+
+.info-2__imgs img {
+    max-width: calc(100% - 150px); 
+}
+
+
+.info-2__imgs img:nth-child(1) {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 3;
+}
+
+.info-2__imgs img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 143px;
+    z-index: 2;
+}
+
+.info-2__imgs img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.info-2__text-oprions {
+    text-align: right; 
+    max-width: 388px; 
+    align-self: flex-end;
+}
+
+
+
+
+
