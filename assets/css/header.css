@@ -70,9 +70,17 @@
     color:rgba(53, 53, 53, 1);
 }
 
+.header__burger {
+    display: none;
+}
+
 @media (max-width: 1070px) {
     .header__nav {
         display: none;
+    }
+
+    .header__burger {
+        display: block;
     }
 
     .header__logo {

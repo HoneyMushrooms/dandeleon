@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/header.css"> 
     <link rel="stylesheet" href="./assets/css/footer.css"> 
+    <link rel="stylesheet" href="./assets/css/mobile.css"> 
     <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
     <script defer src="./assets/js/swiper.js"></script>
+    <script defer src="./assets/js/burger.js"></script>
  
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -41,13 +43,77 @@
                         </svg>
                     </a>
                     <button class="header__btn">Заказать звнок</button>
-                    <button style="background: transparent;">
+                    <button class="header__burger" style="background: transparent;">
                         <img src="./assets/img/Group 76.png" alt="menu">
                     </button>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav__column">
+            <a class="mobile__logo">
+                <img src="./assets/img/logo.png" alt="logo">
+            </a>
+            <svg class="mobile-nav__cross" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.296 7.43198L7.43195 22.296" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M22.296 22.296L7.43195 7.43201" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+            
+            <input class="mobile__search" type="text" name="mobile-search" placeholder="Поиск по товарам">
+            
+            <div class="mobile__history">
+
+            </div>
+
+            <nav class="mobile__nav">
+                <ul>
+                    <li><a href="#" data-main-link="catalog">КАТАЛОГ</a></li>
+                    <li><a href="#" data-main-link="partner">ПАРТНЕРАМ</a></li>
+                    <li><a href="#" data-main-link="buyer">ПОКУПАТЕЛЯМ</a></li>
+                    <li><a href="#" data-main-link="news">НОВОСТИ</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav partner">
+                <ul>
+                    <li><a href="#">формы сотрудничества</a></li>
+                    <li><a href="#">условия сотрудничества</a></li>
+                    <li><a href="#">опт</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav buyer">
+                <ul>
+                    <li><a href="#">как купить</a></li>
+                    <li><a href="#">гарантия и возврат</a></li>
+                    <li><a href="#">вопрос-ответ</a></li>
+                    <li><a href="#">производство</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav news">
+                <ul>
+                    <li><a href="#">новинки</a></li>
+                    <li><a href="#">мероприятия</a></li>
+                    <li><a href="#">стиль</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav catalog">
+                <ul class="catalog-navigation__list">
+                    <li><a href="#">юбки</a></li>
+                    <li><a href="#">брюки</a></li>
+                    <li><a href="#">платья</a></li>
+                    <li><a href="#">верхняя одежда</a></li>
+                    <li><a href="#">жакеты</a></li>
+                    <li><a href="#">сарафаны</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </div>
 
 
     <main>
@@ -59,7 +125,6 @@
             </div>
         </section>
         
-
         <section class="info-1">
             <h4 class="info-1__title">FASHION HOUSE</h4>
             <div class="info-1__group">

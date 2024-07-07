@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+.overflowY-hidden {
+    overflow-y: hidden;
+}
+
 .video {
     position: relative;
 }
