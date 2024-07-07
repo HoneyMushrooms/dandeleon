@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="./assets/css/nullstyle.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/header.css"> 
+    <link rel="stylesheet" href="./assets/css/footer.css"> 
     <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
     <script defer src="./assets/js/swiper.js"></script>
  
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+    
     <header class="header">
         <div class="header__container">
             <div class="header__row">
@@ -29,10 +35,15 @@
                     <img src="./assets/img/logo.png" alt="logo">
                 </a>    
                 <div class="header__group">
-                    <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.4217 8.43438C13.1433 9.86316 12.4712 11.0735 11.3876 12.0488C11.26 12.1637 11.2712 12.2307 11.3597 12.3583C12.3344 13.7682 13.3026 15.1829 14.2742 16.5944C14.3929 16.7667 14.4761 16.9439 14.4353 17.1603C14.3842 17.4324 14.2248 17.6113 13.9614 17.6839C13.6974 17.757 13.4683 17.6808 13.287 17.4743C13.2384 17.419 13.1991 17.3551 13.1571 17.2939C12.1941 15.8922 11.2298 14.492 10.2726 13.0865C10.1848 12.9574 10.1231 12.9431 9.98562 13.0133C5.738 15.1783 0.64967 12.1356 0.552181 7.37428C0.478178 3.79471 3.32856 0.816864 6.90013 0.741726C10.6734 0.662293 13.7151 3.79415 13.5294 7.57134C13.5152 7.86085 13.4905 8.15008 13.4217 8.43438ZM12.1368 8.16896C12.6512 5.36183 10.7819 2.65381 7.97674 2.14195C5.17629 1.63151 2.47594 3.48902 1.95595 6.28466C1.43466 9.08721 3.30003 11.8017 6.10398 12.3199C8.90953 12.8384 11.6227 10.9712 12.1368 8.16896Z" fill="#353535"/>
-                    </svg>
+                    <a href="#">
+                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4217 8.43438C13.1433 9.86316 12.4712 11.0735 11.3876 12.0488C11.26 12.1637 11.2712 12.2307 11.3597 12.3583C12.3344 13.7682 13.3026 15.1829 14.2742 16.5944C14.3929 16.7667 14.4761 16.9439 14.4353 17.1603C14.3842 17.4324 14.2248 17.6113 13.9614 17.6839C13.6974 17.757 13.4683 17.6808 13.287 17.4743C13.2384 17.419 13.1991 17.3551 13.1571 17.2939C12.1941 15.8922 11.2298 14.492 10.2726 13.0865C10.1848 12.9574 10.1231 12.9431 9.98562 13.0133C5.738 15.1783 0.64967 12.1356 0.552181 7.37428C0.478178 3.79471 3.32856 0.816864 6.90013 0.741726C10.6734 0.662293 13.7151 3.79415 13.5294 7.57134C13.5152 7.86085 13.4905 8.15008 13.4217 8.43438ZM12.1368 8.16896C12.6512 5.36183 10.7819 2.65381 7.97674 2.14195C5.17629 1.63151 2.47594 3.48902 1.95595 6.28466C1.43466 9.08721 3.30003 11.8017 6.10398 12.3199C8.90953 12.8384 11.6227 10.9712 12.1368 8.16896Z" fill="#353535"/>
+                        </svg>
+                    </a>
                     <button class="header__btn">Заказать звнок</button>
+                    <button style="background: transparent;">
+                        <img src="./assets/img/Group 76.png" alt="menu">
+                    </button>
                 </div>
             </div>
         </div>
@@ -41,12 +52,14 @@
 
     <main>
         <section class="video">
-            <img src="./assets/img/Rectangle.png" class="video-block"></img>
+            <img src="./assets/img/Rectangle.png" class="video-block">
             <div class="video__group">
                 <h1 class="video__title">DANDELEON PROJECT</h1>
-                <button class="video__btn">КАТАЛОГ</button>
+                <a href="#" class="video__btn">КАТАЛОГ</a>
             </div>
         </section>
+        
+
         <section class="info-1">
             <h4 class="info-1__title">FASHION HOUSE</h4>
             <div class="info-1__group">
@@ -65,10 +78,10 @@
     
                         <div class="main-products__btns">
                             <svg class="swiper-button-prev" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.27848 10.6792L8.89747 19.6419C9.27342 20.1167 9.87215 20.1167 10.2481 19.6419L11 18.8604L3.20253 10.6792C2.82658 10.2848 2.82658 9.73691 3.20253 9.26211L11 1.1613L10.2481 0.299364C9.87215 -0.0950852 9.27342 -0.0950853 8.89747 0.299364L0.278481 9.26211C-0.0905066 9.73691 -0.0905067 10.2848 0.27848 10.6792Z" fill="#2C2C2C"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.27848 10.6792L8.89747 19.6419C9.27342 20.1167 9.87215 20.1167 10.2481 19.6419L11 18.8604L3.20253 10.6792C2.82658 10.2848 2.82658 9.73691 3.20253 9.26211L11 1.1613L10.2481 0.299364C9.87215 -0.0950852 9.27342 -0.0950853 8.89747 0.299364L0.278481 9.26211C-0.0905066 9.73691 -0.0905067 10.2848 0.27848 10.6792Z" fill="white"/>
                             </svg>
                             <svg class="swiper-button-next" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7215 9.3208L2.10253 0.358052C1.72658 -0.116747 1.12785 -0.116747 0.751899 0.358052L0 1.13964L7.79747 9.3208C8.17342 9.71525 8.17342 10.2631 7.79747 10.7379L0 18.8387L0.751899 19.7006C1.12785 20.0951 1.72658 20.0951 2.10253 19.7006L10.7215 10.7379C11.0905 10.2631 11.0905 9.71525 10.7215 9.3208Z" fill="#2C2C2C"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7215 9.3208L2.10253 0.358052C1.72658 -0.116747 1.12785 -0.116747 0.751899 0.358052L0 1.13964L7.79747 9.3208C8.17342 9.71525 8.17342 10.2631 7.79747 10.7379L0 18.8387L0.751899 19.7006C1.12785 20.0951 1.72658 20.0951 2.10253 19.7006L10.7215 10.7379C11.0905 10.2631 11.0905 9.71525 10.7215 9.3208Z" fill="white"/>
                             </svg>
                         </div>
                             
@@ -81,6 +94,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/R5 1.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like active" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -97,6 +113,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/Mask group.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -113,6 +132,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/Mask group.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -129,6 +151,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/Mask group.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -145,6 +170,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/Mask group.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -161,6 +189,9 @@
                                     <div class="product-card__img-block">
                                         <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                                         <img class="product-card__img" src="./assets/img/Mask group.png" alt="product" width="410" height="591">
+                                        <svg class="product-card__btn-like" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
+                                        </svg>
                                     </div>
                                     <div class="product-card__content">
                                         <div class="product-card__text">
@@ -200,14 +231,16 @@
                 </a>
             </div>
             <div class="main-categories__row row-bottom">
-                <a href="#" class="main-categories__photo-3" style="margin-right: 10px;">
-                    <img src="./assets/img/Mask group.png" alt="category">
-                    <p class="main-categories__text">Рубашки и блузы</p>
-                </a>
-                <a href="#" class="main-categories__photo-4" style="margin-right: 15px;">
-                    <img src="./assets/img/R5 1.png" alt="category">
-                    <p class="main-categories__text">Брюки и шорты</p>
-                </a>
+                <div class="main-categories__row-inside">
+                    <a href="#" class="main-categories__photo-3">
+                        <img src="./assets/img/Mask group.png" alt="category">
+                        <p class="main-categories__text">Рубашки и блузы</p>
+                    </a>
+                    <a href="#" class="main-categories__photo-4">
+                        <img src="./assets/img/R5 1.png" alt="category">
+                        <p class="main-categories__text">Брюки и шорты</p>
+                    </a>
+                </div>
                 <a href="#" class="main-categories__photo-5">
                     <img src="./assets/img/R4 1.png" alt="category">
                     <p class="main-categories__text">Костюмная группа</p>
@@ -237,7 +270,7 @@
                     <img src="./assets/img/Mask group (1).png" alt="img">
                 </div>
                 <div class="info-2__body">
-                    <div class="info-2__group" style="margin-top: 82px">
+                    <div class="info-2__group info-mt">
                         <h3 class="info-2__title">DANDELEON PROJECT</h3>
                         <p>Больше 25 лет производим и совершенствуемся Ощутите на себе красоту и комфорт, которые DNDL вкладывает в каждое своё изделие</p>
                         <a href="#" class="info-2__btn">ПОДРОБНЕЕ О НАС</a>
@@ -245,19 +278,167 @@
                     <div class="info-2__group">
                         <p class="info-2__text-oprions">Стильная одежда для тех, кто ценит лаконичность и практичность. Соберите свой безупречный гардероб вместе с нами.</p>
                         <div class="info-2__btns">
-                            <a href="#" class="info-2__btn-wb ">
-                                <img src="./assets/img/wb.png" alt="btn">
+                            <a href="#" class="info-2__btn">
+                                <svg class="wb" width="146" height="17" viewBox="0 0 146 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_174_63)">
+                                    <path d="M4.4449 16.6704L0 0.272949H2.94325L6.36702 12.8633L10.0311 0.272949H12.7641L16.4281 12.9233L19.8519 0.272949H22.7651L18.3202 16.6704H14.9265L11.3525 4.43976L7.80861 16.6704H4.4449Z" fill="white"/>
+                                    <path d="M24.8074 0.272949H27.6005V16.6704H24.8074V0.272949Z" fill="white"/>
+                                    <path d="M33.5169 14.0922H40.2744V16.6702H30.7839V0.302734H33.5169V14.0922Z" fill="white"/>
+                                    <path d="M48.8639 0.302714C50.9962 0.24276 53.0685 1.11209 54.5401 2.6709C57.5735 5.9384 57.5735 11.0345 54.5401 14.302C53.0685 15.8608 50.9962 16.7302 48.8639 16.6702H42.3167V0.302714H48.8639ZM48.8639 14.0922C50.4256 14.0922 51.717 13.5526 52.6781 12.5034C53.6992 11.4242 54.2398 9.95533 54.1797 8.48645C54.2398 6.9876 53.6992 5.5487 52.6781 4.46953C51.687 3.42033 50.3055 2.82079 48.8639 2.88074H45.0497V14.0922H48.8639Z" fill="white"/>
+                                    <path d="M71.4788 11.9937C71.5089 13.2527 70.9683 14.4818 70.0372 15.3211C69.0762 16.2204 67.8148 16.7001 66.4933 16.6701H59.3755V0.302596H65.9828C67.2442 0.272619 68.4755 0.752252 69.4366 1.59161C70.3676 2.40099 70.8782 3.60007 70.8481 4.82913C70.9082 6.14813 70.2475 7.40716 69.1663 8.15659C70.6079 8.87604 71.5089 10.3749 71.4788 11.9937ZM62.1085 2.82067V7.13737H65.9828C67.1841 7.13737 68.1452 6.1781 68.1452 4.97902C68.1452 3.77994 67.1841 2.82067 65.9828 2.82067H62.1085ZM66.4933 14.122C67.7547 14.0621 68.7458 13.0129 68.6858 11.7538C68.6557 10.5548 67.6646 9.59549 66.4933 9.56551H62.1085V14.152L66.4933 14.122Z" fill="white"/>
+                                    <path d="M76.8247 14.0922H84.1828V16.6702H74.0917V0.302734H84.0627V2.88076H76.8247V7.13751H83.492V9.68556H76.8247V14.0922Z" fill="white"/>
+                                    <path d="M96.1059 16.6701L92.562 10.7046H89.3485V16.6701H86.6155V0.272611H93.2828C94.6944 0.242634 96.0759 0.812198 97.067 1.83142C98.0881 2.79069 98.6588 4.13965 98.6287 5.54858C98.5987 7.64697 97.3073 9.53553 95.3251 10.285L99.1093 16.6701H96.1059ZM89.3485 2.82066V8.30647H93.2528C94.7545 8.24651 95.9258 6.9575 95.8657 5.42867C95.8056 4.01975 94.6644 2.88062 93.2528 2.82066H89.3485Z" fill="white"/>
+                                    <path d="M110.672 16.6701L107.158 10.7046H103.945V16.6701H101.212V0.272611H107.879C109.291 0.242634 110.672 0.812198 111.663 1.83142C112.684 2.79069 113.255 4.13965 113.225 5.54858C113.195 7.64697 111.903 9.53553 109.921 10.285L113.705 16.6701H110.672ZM103.945 2.82066V8.30647H107.849C109.381 8.21654 110.522 6.92752 110.432 5.39869C110.342 4.01975 109.231 2.88062 107.849 2.82066H103.945Z" fill="white"/>
+                                    <path d="M115.688 0.272949H118.421V16.6704H115.688V0.272949Z" fill="white"/>
+                                    <path d="M124.367 14.0922H131.725V16.6702H121.634V0.302734H131.605V2.88076H124.367V7.13751H131.034V9.68556H124.367V14.0922Z" fill="white"/>
+                                    <path d="M133.647 12.9531L136.02 11.6041C136.681 13.4627 138.062 14.362 140.135 14.362C142.207 14.362 143.228 13.4927 143.228 12.2037C143.258 11.6041 142.928 11.0046 142.387 10.7048C141.847 10.3451 140.855 9.9554 139.444 9.53572C137.852 9.05609 137.071 8.75632 135.96 8.03687C134.849 7.31742 134.338 6.20826 134.338 4.73939C134.278 3.4204 134.879 2.13138 135.9 1.29202C136.951 0.422688 138.303 -0.0269676 139.684 0.00300949C142.177 -0.0869217 144.459 1.35198 145.481 3.60026L143.198 4.88927C142.507 3.39042 141.336 2.61102 139.714 2.61102C138.092 2.61102 137.101 3.39042 137.101 4.64946C137.101 5.90849 137.912 6.4181 140.465 7.19751C141.096 7.40735 141.546 7.55723 141.846 7.67714C142.147 7.79705 142.567 7.94693 143.078 8.15677C143.498 8.30666 143.919 8.54648 144.279 8.81627C145.15 9.50574 146.111 10.6149 145.991 12.1737C146.051 13.5526 145.45 14.8417 144.369 15.711C143.288 16.5803 141.877 17 140.105 17C136.831 16.97 134.488 15.4412 133.647 12.9531Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_174_63">
+                                    <rect width="146" height="17" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
                             </a>
-                            <a href="#" class="info-2__btn-lm ">
-                                <img src="./assets/img/lm.png" alt="btn">
+                            <a href="#" class="info-2__btn">
+                                <svg class="lm" width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M45.3602 17.4953H48.9495V10.0564C48.9495 6.12398 46.4482 4.03256 43.4342 4.03256C41.4332 4.03256 39.9325 4.89668 38.8444 6.09894H38.3567C37.5313 5.03444 36.1181 4.03256 34.017 4.03256C32.1036 4.03256 30.5778 4.87163 29.7774 5.84847H29.2896V4.40827H25.938V17.4953H29.5148V10.6575C29.5148 8.32812 30.2026 7.52661 32.5913 7.52661C34.98 7.52661 35.6428 8.32812 35.6428 10.6575V17.4953H39.2321V10.6575C39.2321 8.32812 39.895 7.52661 42.2836 7.52661C44.6723 7.52661 45.3352 8.32812 45.3352 10.6575V17.4953H45.3602ZM11.6308 15.6168C10.993 15.1534 10.7054 14.4646 10.7054 13.4126C10.7054 12.0977 11.1056 10.4822 11.7684 9.79336C12.2311 9.32999 12.8939 9.10457 13.8069 9.10457C15.095 9.10457 16.6708 9.44271 17.3337 10.1315C17.7714 10.5698 17.984 11.196 17.984 12.0601C17.984 13.2999 17.6338 15.0657 16.8584 15.7921C16.4207 16.1929 15.8204 16.3682 14.97 16.3682C13.8194 16.3682 12.3687 16.1052 11.6433 15.6168H11.6308ZM17.2836 18.3719L17.1336 19.5742L20.4727 19.9875L22.061 7.02567L18.7219 6.6124L18.5718 7.86475H18.1841C17.6838 6.97558 16.3457 5.77333 13.8194 5.77333C10.2926 5.77333 7.70385 8.37821 7.24112 11.9224C7.2036 12.273 7.17859 12.6237 7.17859 12.9743C7.17859 16.3682 9.47974 19.1735 13.069 19.5742C13.2691 19.5992 13.4692 19.5992 13.6693 19.5992C15.1701 19.5992 16.3082 18.9606 16.8834 18.3719H17.3087H17.2836ZM92.934 14.5398C90.2576 14.5398 89.3697 13.6506 89.3697 10.958C89.3697 8.2655 90.2576 7.35128 92.934 7.35128C95.6103 7.35128 96.4983 8.2655 96.4983 10.958C96.4983 13.6506 95.6103 14.5272 92.934 14.5398ZM75.7379 14.5398C73.049 14.5398 72.1736 13.6506 72.1736 10.958C72.1736 8.2655 73.0615 7.35128 75.7379 7.35128C78.4142 7.35128 79.3022 8.2655 79.3022 10.958C79.3022 13.6506 78.4142 14.5272 75.7379 14.5272V14.5398ZM58.9795 14.5398C56.3032 14.5398 55.4152 13.6506 55.4152 10.958C55.4152 8.2655 56.3032 7.35128 58.9795 7.35128C61.6558 7.35128 62.5438 8.2655 62.5438 10.958C62.5438 13.6506 61.6558 14.5272 58.9795 14.5398ZM2.17609 0L0 17.4703L3.55178 17.9086L5.70285 0.438322L2.17609 0ZM96.6608 16.2304V17.4953H100.013V4.42079H96.6608V5.68566H96.1731C95.6353 4.97182 94.2847 4.04508 92.4712 4.04508C88.4818 4.04508 85.7554 7.08829 85.7554 10.9831C85.7554 14.8779 88.4818 17.8961 92.4712 17.8961C94.2847 17.8961 95.6353 16.9693 96.1731 16.2555H96.6608V16.2304ZM58.9795 4.03256C54.5523 4.03256 51.8009 7.07577 51.8009 10.958C51.8009 14.8403 54.5523 17.871 58.9795 17.871C63.4067 17.871 66.1706 14.8528 66.1706 10.958C66.1706 7.06324 63.4192 4.03256 58.9795 4.03256ZM79.5023 16.2304V17.4953H82.8539V0.150282H79.3147V5.68566H78.8269C78.3017 4.97182 77.1011 4.04508 75.2877 4.04508C71.2982 4.04508 68.5718 7.08829 68.5718 10.9831C68.5718 14.8779 71.2982 17.8961 75.2877 17.8961C77.1011 17.8961 78.5268 16.9693 79.027 16.2555H79.5148L79.5023 16.2304Z" fill="white"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+  
+        <section class="callback">
+            <h4 class="callback__title">ЕСТЬ ВОПРОСЫ ИЛИ ПРЕДЛОЖЕНИЯ?</h4>
+            <p class="callback__text">НАПИШИТЕ НАМ</p>
+            <form action="" class="callback_form">
+                <input type="text" placeholder="Имя" name="name">
+                <input type="tel" placeholder="Телефон" name="phone">
+                <textarea resize="none" placeholder="Сообщение" name="text"></textarea>
+                <button>ОТПРАВИТЬ</button>
+            </form>
+        </section>
 
+        <section class="main-articles">
+            <div class="main-articles__container">
+                <div class="swiper main-articles__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main-articles-card">
+                            <div class="articles-card">
+                                <div class="articles-card__img-block">
+                                    <img class="articles-card__img" src="./assets/img/Rectangle 37.png" alt="article" width="830">
+                                </div>
+                                <div class="articles-card__content">
+                                    <p class="articles-card__title">Заголовок статьи</p>
+                                    <a href="#" class="articles-card__btn">УЗНАТЬ БОЛЬШЕ</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide main-articles-card">
+                            <div class="articles-card">
+                                <div class="articles-card__img-block">
+                                    <img class="articles-card__img" src="./assets/img/R3 1.png" alt="article" width="830">
+                                </div>
+                                <div class="articles-card__content">
+                                    <p class="articles-card__title">Заголовок статьи</p>
+                                    <a href="#" class="articles-card__btn">УЗНАТЬ БОЛЬШЕ</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide main-articles-card">
+                            <div class="articles-card">
+                                <div class="articles-card__img-block">
+                                    <img class="articles-card__img" src="./assets/img/R4 1.png" alt="article" width="830">
+                                </div>
+                                <div class="articles-card__content">
+                                    <p class="articles-card__title">Заголовок статьи</p>
+                                    <a href="#" class="articles-card__btn">УЗНАТЬ БОЛЬШЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <div class="footer__nav">
+                <div class="footer__nav-item display-none">
+                    <div class="stub"></div>
+                    <ul class="footer__list ">
+                        <li><a href="#">новинки</a></li>
+                        <li><a href="#">sale</a></li>
+                        <li><a href="#">hit</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Каталог</a>
+                    <ul class="footer__list footer__catalog">
+                        <li><a href="#">юбки</a></li>
+                        <li><a href="#">брюки</a></li>
+                        <li><a href="#">платья</a></li>
+                        <li><a href="#">верхняя одежда</a></li>
+                        <li><a href="#">жакеты</a></li>
+                        <li><a href="#">сарафаны</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item display-none">
+                    <a href="#" class="footer__title">Коллекции</a>
+                    <ul class="footer__list">
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Покупателям</a>
+                    <ul class="footer__list">
+                        <li><a href="#">как купить</a></li>
+                        <li><a href="#">гарантия и возврат</a></li>
+                        <li><a href="#">вопрос-ответ</a></li>
+                        <li><a href="#">производство</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Партнерам</a>
+                    <ul class="footer__list">
+                        <li><a href="#">формы сотрудничества</a></li>
+                        <li><a href="#">условия сотрудничества</a></li>
+                        <li><a href="#">опт</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Новости</a>
+                    <ul class="footer__list">
+                        <li><a href="#">новинки</a></li>
+                        <li><a href="#">мероприятия</a></li>
+                        <li><a href="#">стиль</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/Layer_1.png" alt="logo">
+                    </a>
+                    <a class="footer__phone" href="tel:+79195172665">+7 (919) 517-26-65</a>
+                    <a class="footer__mail" href="mailto:info@dandeleon.biz">info@dandeleon.biz</a>
+                </div>
+            </div>
+            <div class="footer__policy">
+                <p class="policy__text_1"><span>© 2024 Dandeleon project</span> Пользуясь сайтом, вы даете согласие на использование файлов cookies <a href="#">подробнее</a></p>
+                <p class="policy__text_2">Вся представленная на сайте информация носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст 437 ГК РФ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.</p>
+                <p class="policy__text_3">© 2024 Dandeleon project</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
