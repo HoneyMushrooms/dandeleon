@@ -37,6 +37,24 @@ main {
   overflow-x: hidden;
 }
 
+/* body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+} */
+
+.overflowY-hidden {
+  overflow-y: hidden;
+}
+
 body.no-scroll {
   overflow-y: scroll; 
   position: fixed; 

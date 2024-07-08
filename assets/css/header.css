@@ -51,10 +51,22 @@
     transform: translateX(-50%);
 }
 
-.header__group {
+.header__group-main {
     display: flex;
     gap: 35px;
     align-items: center;
+}
+
+.header__group-svg {
+    display: flex;
+    gap: 22.4px;
+    align-items: center;
+}
+
+.header__group {
+    display: flex;
+    align-items: center;
+    gap: 93px;
 }
 
 .header__btn {
@@ -75,8 +87,17 @@
 }
 
 @media (max-width: 1070px) {
+    .header__btn-like svg {
+        fill: rgba(53, 53, 53, 1);
+    }
+
     .header__nav {
         display: none;
+    }
+
+    .header__group,
+    .header__group-svg {
+        gap: 21.3px;
     }
 
     .header__burger {
@@ -100,12 +121,12 @@
         display: none;
     }
 
-    .header__group svg {
+    .header__group-main svg {
         width: 19px;
         height: 19px;
     }
 
-    .header__group {
+    .header__group-main {
         gap: 21px;
     }
 
