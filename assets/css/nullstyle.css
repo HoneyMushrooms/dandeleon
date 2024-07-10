@@ -15,7 +15,12 @@ a:hover { text-decoration: none; }
 ul li { list-style: none; }
 img { vertical-align: top; }
 h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit;}
-input { -webkit-appearance: none; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+}
   
 html, body {
   width: 100%;
