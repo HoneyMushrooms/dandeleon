@@ -1,12 +1,14 @@
 const dropdown = document.querySelector('.sort-dropdown');
 const dropdownContent = document.querySelector('.sort-dropdown__content');
 
-dropdown.addEventListener('click', function() {
-    dropdownContent.style.display = dropdownContent.style.display === 'flex' ? 'none' : 'flex';
-});
+if(dropdown) {
+    dropdown.addEventListener('click', function() {
+        dropdownContent.style.display = dropdownContent.style.display === 'flex' ? 'none' : 'flex';
+    });
+}
 
 document.addEventListener('click', function(event) {
-    if (!event.target.closest('.sort-dropdown')) {
+    if (!event.target.closest('.sort-dropdown') && dropdownContent ) {
         dropdownContent.style.display = 'none';
     }
 });
@@ -15,15 +17,19 @@ window.onscroll = () => scrollFunction();
 
 function scrollFunction() {
     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && window.screen.availWidth < 1070) {
-        document.querySelector('.btn-scroll-top').style.display = 'flex';
-        document.querySelector('.btn-scroll-top').onclick = function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }    
+        if(document.querySelector('.btn-scroll-top')) {
+            document.querySelector('.btn-scroll-top').style.display = 'flex';
+            document.querySelector('.btn-scroll-top').onclick = function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }    
+        }
     } else {
-        document.querySelector('.btn-scroll-top').style.display = 'none';
+        if(document.querySelector('.btn-scroll-top')) {
+            document.querySelector('.btn-scroll-top').style.display = 'none';
+        }
     }
 }
 
@@ -40,19 +46,23 @@ const openFilter = () => {
     filter.classList.toggle('filter_active');
 };
 
-filterBtn.addEventListener('click', openFilter); 
-filterCrossBtn.addEventListener('click', openFilter); 
+if(filterBtn) {
+    filterBtn.addEventListener('click', openFilter); 
+}
+if(filterCrossBtn) {
+    filterCrossBtn.addEventListener('click', openFilter); 
+}
 
-if (window.screen.availWidth < 1070) {
+if (window.screen.availWidth < 1070 && filterBtnMobile) {
     filterBtnMobile.style.display = 'flex';
     filterBtnMobile.addEventListener('click', openFilter); 
 }
 
 window.addEventListener('resize', () => {
-    if (window.screen.availWidth < 1070) {
+    if (window.screen.availWidth < 1070 && filterBtnMobile) {
         filterBtnMobile.style.display = 'flex';
         filterBtnMobile.addEventListener('click', openFilter); 
-    } else {
+    } else if (filterBtnMobile) {
          document.querySelector('.filter-btn').style.display = 'none';
     }
 })
@@ -83,18 +93,59 @@ paramLinks.forEach(function(link, index) {
 const decreaseItems = document.getElementById('decreaseItems');
 const defaultItems = document.getElementById('defaultItems');
 
-decreaseItems.addEventListener('click', () => {
-    document.querySelector('.decrease-btn').classList.add('active');
-    document.querySelector('.default-btn').classList.remove('active');
-    document.querySelector('.catalog-product__column').style.gridTemplateColumns = 'repeat(3, 1fr)';
-    document.querySelectorAll('.catalog-product-card').forEach(e => { e.style.maxWidth = '550px' });
-    document.querySelectorAll('.catalog-product-card__img-block ').forEach(e => { e.style.height = '795px' });
+if(decreaseItems) {
+    decreaseItems.addEventListener('click', () => {
+        document.querySelector('.decrease-btn').classList.add('active');
+        document.querySelector('.default-btn').classList.remove('active');
+        document.querySelector('.catalog-product__column').style.gridTemplateColumns = 'repeat(3, 1fr)';
+        document.querySelectorAll('.catalog-product-card').forEach(e => { e.style.maxWidth = '550px' });
+        document.querySelectorAll('.catalog-product-card__img-block ').forEach(e => { e.style.height = '795px' });
+    });
+}
+
+if(defaultItems) {
+    defaultItems.addEventListener('click', () => {
+        document.querySelector('.default-btn').classList.add('active');
+        document.querySelector('.decrease-btn').classList.remove('active');
+        document.querySelector('.catalog-product__column').style.gridTemplateColumns = '';
+        document.querySelectorAll('.catalog-product-card').forEach(e => { e.style.maxWidth = '' });
+        document.querySelectorAll('.catalog-product-card__img-block ').forEach(e => { e.style.height = '' });
+    });
+}
+
+const description = document.querySelector('.description');
+const descriptionBtn = document.querySelector('.product__about-btn');
+const descriptionCrossBtn = document.querySelector('.description__cross');
+
+const openDescription = () => {
+    document.querySelector('main').classList.toggle('overlay');
+    document.querySelector('footer').classList.toggle('overlay');
+    description.classList.toggle('description_active');
+};
+
+if(descriptionBtn) {
+    descriptionBtn.addEventListener('click', openDescription); 
+}
+
+if(descriptionCrossBtn) {
+    descriptionCrossBtn.addEventListener('click', openDescription); 
+}
+
+const faqQuestion = document.querySelectorAll('.faq__question');
+
+faqQuestion.forEach(function(link, index) {
+    link.addEventListener('click', function(event) {
+
+        const svg = this.querySelector('svg');
+        const faqAnswer = this.nextElementSibling;
+
+        if(faqAnswer.classList.contains('open')) {
+            faqAnswer.classList.remove('open');
+            svg.classList.remove('rotate');
+        } else {
+            faqAnswer.classList.add('open');
+            svg.classList.add('rotate');
+        }
+    });
 });
 
-defaultItems.addEventListener('click', () => {
-    document.querySelector('.default-btn').classList.add('active');
-    document.querySelector('.decrease-btn').classList.remove('active');
-    document.querySelector('.catalog-product__column').style.gridTemplateColumns = '';
-    document.querySelectorAll('.catalog-product-card').forEach(e => { e.style.maxWidth = '' });
-    document.querySelectorAll('.catalog-product-card__img-block ').forEach(e => { e.style.height = '' });
-});

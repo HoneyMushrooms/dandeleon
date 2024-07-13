@@ -161,11 +161,11 @@
 }
 
 .product-card,
-.catalog-product-card {
+.catalog-product-card,
+.product__galery-item {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 410px;
 }
 
 .product-card__img-block,
@@ -692,6 +692,7 @@
     align-items: center;
     color: rgba(255, 255, 255, 1);
     align-self: flex-end;
+    background-color: rgba(50, 58, 65, 1);
 }
 
 .info-2__imgs {

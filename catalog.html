@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/menu.css"> 
     <link rel="stylesheet" href="./assets/css/catalog.css">
-    <link rel="stylesheet" href="./assets/css/mobile.css"> 
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/popup.css"> 
     <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
     <script defer src="./assets/js/swiper.js"></script>
+    <script defer src="./assets/js/popup.js"></script>
     <script defer src="./assets/js/burger.js"></script>
     <script defer src="./assets/js/handlers.js"></script>
  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="body">
@@ -39,7 +42,7 @@
                     <img src="./assets/img/logo.png" alt="logo">
                 </a>    
                 <div class="header__group">
-                    <button class="header__btn">Заказать звнок</button>
+                    <button data-popup="city" class="header__btn popup-link">Заказать звнок</button>
                     <div class="header__group-svg">
                         <a href="#">
                             <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -480,13 +483,13 @@
             <div class="catalog-container">
                 <div class="catalog-product__column">
                     <div class="catalog-product-card">
-                        <div class="catalog-product-card__img-block">
+                        <a href="./product.html" class="catalog-product-card__img-block">
                             <span class="stock__info-label info-label bg-color_brandbook-base-cristal-white color_brandbook-more">Акция до 31 марта</span>
                             <img class="catalog-product-card__img" src="./assets/img/R5 1.png" alt="product" width="410" height="591">
                             <svg class="catalog-product-card__btn-like active" width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M26.6393 7.48778C26.6393 4.06333 23.6733 1.27778 20.027 1.27778C17.3604 1.27778 15.0474 2.78556 14.0134 4.93222C12.9794 2.78556 10.6665 1.27778 7.99981 1.27778C4.32634 1.27778 1.36035 4.06333 1.36035 7.48778C1.36035 8.20333 1.49641 8.89333 1.7413 9.55778C2.01341 10.2989 2.44879 10.9633 2.96579 11.5511C3.18348 11.8067 3.42838 12.0367 3.70049 12.2411L13.7957 21.6456C13.7957 21.6456 13.9318 21.7222 14.0134 21.7222C14.095 21.7222 14.1767 21.6967 14.2311 21.6456L24.6801 11.8833C25.3604 11.2444 25.8774 10.4778 26.2311 9.60889C26.476 8.94444 26.6121 8.25444 26.6121 7.51333L26.6393 7.48778Z" stroke="#353535" stroke-miterlimit="10"/>
                             </svg>
-                        </div>
+                        </a>
                         <div class="catalog-product-card__content">
                             <div class="catalog-product-card__text">
                                 <p class="catalog-product-card__description">Платье классическое приталенное</p>
@@ -789,5 +792,25 @@
             </div>
         </div>
     </footer>
+
+    <div id="city" class="popup">
+        <div class="popup-container">
+            <div class="callback-modal__column popup__body">
+                <a href="#" class="popup__close">
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.2964 8.2959L7.43237 23.1599" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                        <path d="M22.2964 23.1597L7.43237 8.29565" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <form action="" class="callback_form">
+                    <h2 class="callback-modal__title">Заполните поля</h2>
+                    <p class="callback-modal__subtitle">и наш менеджер свяжется с вами в ближайшее время.</p> 
+                    <input class="callback-modal__input-1" type="text" placeholder="Имя" name="name">
+                    <input class="callback-modal__input-2" type="tel" placeholder="Телефон" name="phone">
+                    <button>ОТПРАВИТЬ</button>
+                </form>             
+            </div>
+        </div>
+    </div>
 </body>
 </html>

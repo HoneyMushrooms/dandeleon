@@ -1,0 +1,165 @@
+.contact {
+    margin-top: clamp(5.625rem, 4.4196rem + 4.2857vw, 9.5625rem);
+}
+
+.contact__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: clamp(0.9375rem, -2.3533rem + 11.7007vw, 11.6875rem);
+    padding-right: clamp(0.9375rem, -3.8457rem + 17.0068vw, 16.5625rem);
+}
+
+.contact__wrapper {
+    display: flex;
+    gap: 41px;
+}
+
+.contact__column {
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+    width: 100%;
+}
+
+.contact__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__group {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+} 
+
+.contact__group h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30.97px;
+}
+
+.contact__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__data a {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 33px;
+    color: rgba(44, 44, 44, 1);
+    position: relative;
+    padding-left: 40px;
+}
+
+.contact__mail::before {
+    content: url(../img/favicon/_Слой_1\ \(2\).svg);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.contact__phone::before {
+    content: url(../img/favicon/_Слой_1\ \(3\).svg);
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.contact__group .info-2__btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.contact__group .info-2__btn {
+    width: 100%;
+    background-color: rgba(53, 53, 53, 1);
+}
+
+.contact__group .info-2__btn:hover {
+    width: 100%;
+    background-color: white;
+}
+
+.contact__group .wb {
+    width: 94px;
+    height: 11px;
+}
+
+.contact__group .lm {
+    width: 75px;
+    height: 15px;
+}
+
+.requisites-1 {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21.06px;
+}
+
+.requisites-2 {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27.85px;
+}
+
+.contact-page .callback {
+    padding-top: clamp(2.375rem, 1.1505rem + 4.3537vw, 6.375rem);
+}
+
+@media (max-width: 1070px) {
+    .contact__group h2 {
+        font-size: 20px;
+        line-height: 24.78px;
+    }
+
+    .contact__data a {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .contact__mail::before {
+        top: 4px;
+    }
+    
+    .contact__phone::before {
+        top: 2px;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__group:nth-child(1) {
+        gap: 8px;
+        margin-bottom: 26px;
+    } 
+
+    .contact__group:nth-child(2),
+    .contact__group:nth-child(3) {
+        gap: 19px !important;
+    } 
+    
+    .contact__group:nth-child(2) {
+        margin-bottom: 38px;
+    }
+
+    .contact__group .info-2__btns {
+        max-width: 294px;
+        align-self: start;
+    }
+
+    .requisites-1 {
+        font-size: 13px;
+        line-height: 16.11px
+    }
+    
+    .requisites-2 {
+        font-size: 13px;
+        line-height: 21.29px;
+    }
+}

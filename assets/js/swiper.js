@@ -38,3 +38,31 @@ const swiper2 = new Swiper('.main-articles__swiper', {
       }
     }
 });
+
+const swiper3 = new Swiper('.product-latest__swiper', {
+  grabCursor: true,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+
+    breakpoints: {
+      1920: {
+        spaceBetween: 10,
+      },
+      768: {
+        spaceBetween: 10,
+      },
+      0: {
+        spaceBetween: 4.74, 
+      }
+    }
+});
+
+const swiper4 = new Swiper(".product-vertical-swiper", {
+  grabCursor: true,
+  slidesPerView: 1,
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
