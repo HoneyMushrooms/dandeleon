@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="./assets/css/nullstyle.css">
+    <link rel="stylesheet" href="./assets/css/header.css"> 
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/menu.css"> 
+    <link rel="stylesheet" href="./assets/css/catalog.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css"> 
+    <link rel="stylesheet" href="./assets/css/faq.css"> 
+    <link rel="stylesheet" href="./assets/css/popup.css"> 
+    <link rel="stylesheet" href="./assets/css/blog.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+    <script defer src="./assets/js/swiper.js"></script>
+    <script defer src="./assets/js/burger.js"></script>
+    <script defer src="./assets/js/handlers.js"></script>
+    <script defer src="./assets/js/popup.js"></script>
+</head>
+<body class="body">
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__row">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#" class="link header__link active">Каталог</a></li>
+                        <li><a href="#" class="link header__link">Партнерам</a></li>
+                        <li><a href="#" class="link header__link">ПОКУПАТЕЛЯМ</a></li>
+                        <li><a href="#" class="link header__link">Новости</a></li>
+                    </ul>
+                </nav>
+                <a href="./index.html" class="header__logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>    
+                <div class="header__group">
+                    <button data-popup="city" class="header__btn popup-link">Заказать звнок</button>
+                    <div class="header__group-svg">
+                        <a href="#">
+                            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4217 8.43438C13.1433 9.86316 12.4712 11.0735 11.3876 12.0488C11.26 12.1637 11.2712 12.2307 11.3597 12.3583C12.3344 13.7682 13.3026 15.1829 14.2742 16.5944C14.3929 16.7667 14.4761 16.9439 14.4353 17.1603C14.3842 17.4324 14.2248 17.6113 13.9614 17.6839C13.6974 17.757 13.4683 17.6808 13.287 17.4743C13.2384 17.419 13.1991 17.3551 13.1571 17.2939C12.1941 15.8922 11.2298 14.492 10.2726 13.0865C10.1848 12.9574 10.1231 12.9431 9.98562 13.0133C5.738 15.1783 0.64967 12.1356 0.552181 7.37428C0.478178 3.79471 3.32856 0.816864 6.90013 0.741726C10.6734 0.662293 13.7151 3.79415 13.5294 7.57134C13.5152 7.86085 13.4905 8.15008 13.4217 8.43438ZM12.1368 8.16896C12.6512 5.36183 10.7819 2.65381 7.97674 2.14195C5.17629 1.63151 2.47594 3.48902 1.95595 6.28466C1.43466 9.08721 3.30003 11.8017 6.10398 12.3199C8.90953 12.8384 11.6227 10.9712 12.1368 8.16896Z" fill="#353535"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__btn-like">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_258_14)">
+                                <path d="M19.028 5.53446C19.028 3.00335 16.9095 0.944458 14.305 0.944458C12.4003 0.944458 10.7482 2.0589 10.0096 3.64557C9.271 2.0589 7.61891 0.944458 5.71415 0.944458C3.09024 0.944458 0.97168 3.00335 0.97168 5.53446C0.97168 6.06335 1.06886 6.57335 1.24379 7.06446C1.43815 7.61224 1.74913 8.10335 2.11842 8.53779C2.27391 8.72668 2.44884 8.89668 2.64321 9.04779L9.85409 15.9989C9.85409 15.9989 9.95127 16.0556 10.0096 16.0556C10.0679 16.0556 10.1262 16.0367 10.1651 15.9989L17.6286 8.78335C18.1145 8.31112 18.4838 7.74446 18.7365 7.10224C18.9114 6.61112 19.0086 6.10112 19.0086 5.55335L19.028 5.53446Z" stroke="#2C2C2C" stroke-width="1.3" stroke-miterlimit="10"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_258_14">
+                                <rect width="20" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="header__burger" style="background: transparent;">
+                        <img src="./assets/img/Group 76.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <div class="mobile-nav__column">
+            <a class="mobile__logo">
+                <img src="./assets/img/logo.png" alt="logo">
+            </a>
+            <svg class="mobile-nav__cross" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.296 7.43198L7.43195 22.296" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M22.296 22.296L7.43195 7.43201" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+            
+            <input class="mobile__search" type="text" name="mobile-search" placeholder="Поиск по товарам">
+            
+            <div class="mobile__history">
+
+            </div>
+
+            <nav class="mobile__nav">
+                <ul>
+                    <li><a href="#" data-main-link="catalog">КАТАЛОГ</a></li>
+                    <li><a href="#" data-main-link="partner">ПАРТНЕРАМ</a></li>
+                    <li><a href="#" data-main-link="buyer">ПОКУПАТЕЛЯМ</a></li>
+                    <li><a href="#" data-main-link="news">НОВОСТИ</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav partner">
+                <ul>
+                    <li><a href="#">формы сотрудничества</a></li>
+                    <li><a href="#">условия сотрудничества</a></li>
+                    <li><a href="#">опт</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav buyer">
+                <ul>
+                    <li><a href="#">как купить</a></li>
+                    <li><a href="#">гарантия и возврат</a></li>
+                    <li><a href="#">вопрос-ответ</a></li>
+                    <li><a href="#">производство</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav news">
+                <ul>
+                    <li><a href="#">новинки</a></li>
+                    <li><a href="#">мероприятия</a></li>
+                    <li><a href="#">стиль</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile__nav catalog">
+                <ul class="catalog-navigation__list">
+                    <li><a href="#">юбки</a></li>
+                    <li><a href="#">брюки</a></li>
+                    <li><a href="#">платья</a></li>
+                    <li><a href="#">верхняя одежда</a></li>
+                    <li><a href="#">жакеты</a></li>
+                    <li><a href="#">сарафаны</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </div>
+
+    <main>
+        <section class="blog">
+            <div class="blog__container">
+                <div class="blog__column">
+                    <h2 class="blog__subtitle">мир Dandeleon</h2>
+                    <h1 class="blog__title">мероприятия</h1>
+                    <ul class="blog__nav">
+                        <li><a href="#">новости</a></li>
+                        <li><a href="#">новинки</a></li>
+                        <li><a href="#" class="active">мероприятия</a></li>
+                        <li><a href="#">стиль</a></li>
+                    </ul>
+                    <div class="blog__grid">
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                        <a href="#" class="blog-item">
+                            <div class="blog-item__img">
+                                <img src="./assets/img/R6 1.png" alt="blog-img">
+                            </div>
+                            <div class="blog-item__tags">
+                                <span>мероприятия</span>
+                                <span>мода</span>
+                                <span>новости</span>
+                            </div>
+                            <h2 class="blog-item__title">Заголовок статьи</h2>
+                            <p class="blog-item__text">Презентация новой коллекции. <br>
+                                Для тех, кто ценит лаконичность и практичность. </p>
+                            <span class="blog-item__date">3/02/24</span>
+                        </a>
+                    </div>
+                    <a href="#" class="blog__btn">узнать больше</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__column">
+            <div class="footer__nav">
+                <div class="footer__nav-item display-none">
+                    <div class="stub"></div>
+                    <ul class="footer__list">
+                        <li><a href="#">новинки</a></li>
+                        <li><a href="#">sale</a></li>
+                        <li><a href="#">hit</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Каталог</a>
+                    <ul class="footer__list footer__catalog">
+                        <li><a href="#">юбки</a></li>
+                        <li><a href="#">брюки</a></li>
+                        <li><a href="#">платья</a></li>
+                        <li><a href="#">верхняя одежда</a></li>
+                        <li><a href="#">жакеты</a></li>
+                        <li><a href="#">сарафаны</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item display-none">
+                    <a href="#" class="footer__title">Коллекции</a>
+                    <ul class="footer__list">
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                        <li><a href="#">название коллекции</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Покупателям</a>
+                    <ul class="footer__list">
+                        <li><a href="#">как купить</a></li>
+                        <li><a href="#">гарантия и возврат</a></li>
+                        <li><a href="#">вопрос-ответ</a></li>
+                        <li><a href="#">производство</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Партнерам</a>
+                    <ul class="footer__list">
+                        <li><a href="#">формы сотрудничества</a></li>
+                        <li><a href="#">условия сотрудничества</a></li>
+                        <li><a href="#">опт</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-item">
+                    <a href="#" class="footer__title">Новости</a>
+                    <ul class="footer__list">
+                        <li><a href="#">новинки</a></li>
+                        <li><a href="#">мероприятия</a></li>
+                        <li><a href="#">стиль</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/Layer_1.png" alt="logo">
+                    </a>
+                    <a class="footer__phone" href="tel:+79195172665">+7 (919) 517-26-65</a>
+                    <a class="footer__mail" href="mailto:info@dandeleon.biz">info@dandeleon.biz</a>
+                </div>
+                <div class="footer__group">
+                    <a href="#">Новости</a>
+                    <a href="#">Частые вопросы</a>
+                </div>
+            </div>
+            <div class="footer__policy">
+                <p class="policy__text_1"><span>© 2024 Dandeleon project</span> Пользуясь сайтом, вы даете согласие на использование файлов cookies <a href="#">подробнее</a></p>
+                <p class="policy__text_2">Вся представленная на сайте информация носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст 437 ГК РФ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.</p>
+                <p class="policy__text_3">© 2024 Dandeleon project</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="city" class="popup">
+        <div class="popup-container">
+            <div class="callback-modal__column popup__body">
+                <a href="#" class="popup__close">
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.2964 8.2959L7.43237 23.1599" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                        <path d="M22.2964 23.1597L7.43237 8.29565" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <form action="" class="callback_form">
+                    <h2 class="callback-modal__title">Заполните поля</h2>
+                    <p class="callback-modal__subtitle">и наш менеджер свяжется с вами в ближайшее время.</p> 
+                    <input class="callback-modal__input-1" type="text" placeholder="Имя" name="name">
+                    <input class="callback-modal__input-2" type="tel" placeholder="Телефон" name="phone">
+                    <button>ОТПРАВИТЬ</button>
+                </form>             
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -938,7 +938,7 @@
 
 .main-articles {
     width: 100%;
-    background: rgba(44, 44, 44, 1);
+    background-color: rgba(50, 58, 65, 1);
 }
 
 .main-articles__container {
@@ -1009,6 +1009,10 @@
 }
 
 @media (max-width: 940px) {
+    .main-articles {
+        background: rgba(44, 44, 44, 1);
+    }
+    
     .main-articles-card {
         width: 262px !important;
     }
