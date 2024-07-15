@@ -228,6 +228,10 @@ input[type="radio"]:checked + .custom-radio {
     gap: 10px;
 }
 
+.product__galery-item .catalog-product-card__tag {
+    line-height: 27px;
+}
+
 .product_brand {
     position: absolute;
     bottom: 0;
@@ -363,6 +367,9 @@ input[type="radio"]:checked + .custom-radio {
         height: clamp(14.625rem, -1.5696rem + 57.5806vw, 36.9375rem) !important;
     }
 
+    .product__galery-item .catalog-product-card__tag {
+        line-height: 14px;
+    }
 
     .product-latest__wrapper {
         overflow-x: hidden;

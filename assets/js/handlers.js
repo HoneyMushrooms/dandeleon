@@ -80,12 +80,21 @@ paramLinks.forEach(function(link, index) {
             }
         });
 
-        const filterParam = this.nextElementSibling;
+        paramLinks.forEach( link => {
+            const svg = link.querySelector('svg');
+            svg.classList.remove('minus');
+        })
 
+        const svg = this.querySelector('svg');
+        
+        const filterParam = this.nextElementSibling;
+        
         if(filterParam.classList.contains('open')) {
             filterParam.classList.remove('open');
+            svg.classList.remove('minus');
         } else {
             filterParam.classList.add('open');
+            svg.classList.add('minus');
         }
     });
 });

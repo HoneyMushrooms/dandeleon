@@ -10,14 +10,20 @@
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    max-height: 95vh;
 }
 
 .search_active { 
     top: 0;
 }
 
+.search__container {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
 .search__column {
-    padding: clamp(1.1875rem, 1.0918rem + 0.3401vw, 1.5rem) clamp(0.9375rem, -1.1862rem + 7.551vw, 7.875rem) clamp(1.1875rem, 0.6709rem + 1.8367vw, 2.875rem); clamp(0.9375rem, -1.301rem + 7.9592vw, 8.25rem);;
+    padding: clamp(1.1875rem, 0.7283rem + 1.6327vw, 2.6875rem) clamp(0.9375rem, -1.1862rem + 7.551vw, 7.875rem) clamp(1.1875rem, 0.6709rem + 1.8367vw, 2.875rem); clamp(0.9375rem, -1.301rem + 7.9592vw, 8.25rem);;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -28,15 +34,180 @@
     margin-bottom: 30px;
 }
 
-
 .search__input {
+    margin-top: 15px;
     width: 100%;
     border-bottom: 1px solid rgba(44, 44, 44, 1);
-    padding: 8px 10px 8px 55px;
+    padding: 16px 10px 16px 35px;
     font-size: 15px;
     font-weight: 300;
     line-height: 18.58px;
+    color: rgba(153, 153, 153, 1);
+    background: url(../img/favicon/Vector\ \(3\).svg)  no-repeat left center;
+    margin-bottom: 31px;
+}
+
+.search__row {
+    display: flex;
+    gap: clamp(1.875rem, 0.5548rem + 4.6939vw, 6.1875rem);
+}
+
+.search h2 {
+    font-family: DIN Pro Medium;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.62px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.search__popular {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 172px;
+    width: 100%;
+}
+
+.search__popular a {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
     color: rgba(44, 44, 44, 1);
-    background: url(../img/favicon/Vector\ \(3\).svg)  no-repeat 18px center;
-    margin-bottom: 9px;
+    position: relative;
+    padding-left: 27px;
+}
+
+.search__popular a::before {
+    content: url('../img/favicon/Vector\ \(10\).svg'); 
+    display: inline-block;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search__popular-products {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    max-width: 1185px;
+    overflow-x: hidden;
+}
+
+.search-slide {
+    width: 237px !important;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+} 
+
+.search-item__img {
+    position: relative;
+    max-width: 237px;
+    height: 342px;
+}
+
+.search-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.search-active path {
+    fill: rgba(238, 199, 189, 1);
+}
+
+.search-item__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-item__content p {
+    font-family: DIN Pro;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 23px;
+    color: rgba(44, 44, 44, 1);
+}
+
+
+.search-item__content span {
+    font-family: DIN Pro Medium;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(44, 44, 44, 1);
+}
+
+.search__catalog-btn {
+    align-self: center;
+    width: max-content;
+    display: block;
+    border: 0.5px solid rgba(50, 58, 65, 1);
+    color: rgba(50, 58, 65, 1);
+    padding: 11px 38px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16.11px;
+    border-radius: 3px;
+}
+
+.search__categories {display: none;}
+
+@media (max-width: 1070px) {
+    .search .header__group-svg a, .search__popular-products {
+        display: none;
+    }
+
+    .search__input {
+        margin-top: 21px;
+        padding: 7px 10px 7px 50px;
+        color: rgba(44, 44, 44, 1);
+        background: url(../img/favicon/Vector\ \(3\).svg)  no-repeat 16px center;
+        margin-bottom: 24px;
+    }
+
+    .search__column .header__row {
+        margin-bottom: 0;
+    }
+    
+    .search__row {
+        flex-direction: column;
+    }
+
+    .search__categories {
+        display: flex;
+        gap: 15px 10px;
+        flex-wrap: wrap;
+    }
+
+    .search__categories a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16.11px;
+        color: rgba(44, 44, 44, 1);
+        border: 0.5px solid rgba(44, 44, 44, 1);
+        padding: 11px 20px;
+        border-radius: 3px;
+    }
+
+    .search__categories .active {
+        background-color: rgba(238, 199, 189, 1);
+        border-color: rgba(238, 199, 189, 1);
+    }
+
+    .search {
+        height: 100%;
+        max-height: none;
+    }
+
 }

@@ -66,3 +66,22 @@ const swiper4 = new Swiper(".product-vertical-swiper", {
     clickable: true,
   },
 });
+
+const swiper5 = new Swiper('.search-swiper', {
+  grabCursor: true,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+
+    breakpoints: {
+      1920: {
+        spaceBetween: 10,
+      },
+      768: {
+        spaceBetween: 10,
+      },
+      0: {
+        spaceBetween: 4.74, 
+      }
+    }
+});
+
