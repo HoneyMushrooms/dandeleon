@@ -160,11 +160,15 @@
     border-radius: 3px;
 }
 
-.search__categories {display: none;}
+.search__categories, .search__cross {display: none;}
 
 @media (max-width: 1070px) {
     .search .header__group-svg a, .search__popular-products {
         display: none;
+    }
+
+    .search__cross {
+        display: block;
     }
 
     .search__input {
