@@ -80,6 +80,7 @@
     font-weight: 300;
     line-height: 16.11px;
     color:rgba(53, 53, 53, 1);
+    text-transform: uppercase;
 }
 
 .header__burger {

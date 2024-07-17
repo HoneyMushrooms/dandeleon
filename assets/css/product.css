@@ -259,7 +259,7 @@ input[type="radio"]:checked + .custom-radio {
 
 .product-latest__container {
     max-width: 1920px;
-    padding: 0 clamp(0.9375rem, -4.1431rem + 18.0645vw, 7.9375rem);
+    padding-inline: clamp(0.9375rem, -4.1431rem + 18.0645vw, 7.9375rem);
     width: 100%;
     margin: 0 auto;
 }
@@ -524,11 +524,10 @@ input[type="radio"]:checked + .custom-radio {
     }
     
     .product-latest__container {
-        max-width: 1920px;
-        padding: 0 127px; 
+        /* max-width: 1920px;
         width: 100%;
-        margin: 0 auto;
-        padding: 0 clamp(0.9375rem, -4.1431rem + 18.0645vw, 7.9375rem);
+        margin: 0 auto; */
+        /* padding: 0 clamp(0.9375rem, -4.1431rem + 18.0645vw, 7.9375rem); */
     }
 
     .product__galery h1 {

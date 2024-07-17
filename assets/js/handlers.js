@@ -158,3 +158,19 @@ faqQuestion.forEach(function(link, index) {
     });
 });
 
+const manufacterVideoBtn = document.querySelector('.video-btn');
+const video = document.getElementById('video');
+
+if(manufacterVideoBtn && video) {
+    let isPlaying = false;
+
+    manufacterVideoBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            video.pause();
+            isPlaying = false;
+        } else {
+            video.play();
+            isPlaying = true;
+        }
+    });
+}

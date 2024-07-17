@@ -551,7 +551,7 @@
 }
 
 .new-collection__btn {
-    align-self: center;
+    align-self: flex-start;
     width: max-content;
     padding: 9px 32px;
     border-radius: 3px;
