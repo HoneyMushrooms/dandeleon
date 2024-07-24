@@ -4,8 +4,8 @@ const swiper1 = new Swiper('.main-products__swiper', {
   spaceBetween: 10,
 
   navigation: {
-    nextEl: '.main-products .swiper-button-next',
-    prevEl: '.main-products .swiper-button-prev',
+    nextEl: '.main-products__btns .swiper-button-next',
+    prevEl: '.main-products__btns .swiper-button-prev',
   },
 
   breakpoints: {

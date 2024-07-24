@@ -55,7 +55,7 @@
 }
 
 .contact__mail::before {
-    content: url(../img/favicon/_Слой_1\ \(2\).svg);
+    content: url('../img/favicon/contact_mail.svg');
     width: 100%;
     position: absolute;
     left: 0;
@@ -63,7 +63,7 @@
 }
 
 .contact__phone::before {
-    content: url(../img/favicon/_Слой_1\ \(3\).svg);
+    content: url('../img/favicon/contact_phone.svg');
     position: absolute;
     left: 0;
     top: 5px;

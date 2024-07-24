@@ -40,27 +40,29 @@
 
 </head>
 <body>
-	<header class="header">
+    <header class="header">
         <div class="header__container">
             <div class="header__row">
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="./catalog.html" class="link header__link active">Каталог</a></li>
+                        <li><a href="#" class="link header__link active">Каталог</a></li>
                         <li><a href="#" class="link header__link">Партнерам</a></li>
                         <li><a href="#" class="link header__link">ПОКУПАТЕЛЯМ</a></li>
                         <li><a href="#" class="link header__link">Новости</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="header__logo">
-                    <img src="./assets/img/logo.png" alt="logo">
+                <a href="./index.html" class="header__logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
                 </a>    
-                <div class="header__group-main">
-                    <a href="#" class="header__search-btn">
-                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.4217 8.43438C13.1433 9.86316 12.4712 11.0735 11.3876 12.0488C11.26 12.1637 11.2712 12.2307 11.3597 12.3583C12.3344 13.7682 13.3026 15.1829 14.2742 16.5944C14.3929 16.7667 14.4761 16.9439 14.4353 17.1603C14.3842 17.4324 14.2248 17.6113 13.9614 17.6839C13.6974 17.757 13.4683 17.6808 13.287 17.4743C13.2384 17.419 13.1991 17.3551 13.1571 17.2939C12.1941 15.8922 11.2298 14.492 10.2726 13.0865C10.1848 12.9574 10.1231 12.9431 9.98562 13.0133C5.738 15.1783 0.64967 12.1356 0.552181 7.37428C0.478178 3.79471 3.32856 0.816864 6.90013 0.741726C10.6734 0.662293 13.7151 3.79415 13.5294 7.57134C13.5152 7.86085 13.4905 8.15008 13.4217 8.43438ZM12.1368 8.16896C12.6512 5.36183 10.7819 2.65381 7.97674 2.14195C5.17629 1.63151 2.47594 3.48902 1.95595 6.28466C1.43466 9.08721 3.30003 11.8017 6.10398 12.3199C8.90953 12.8384 11.6227 10.9712 12.1368 8.16896Z" fill="#353535"/>
-                        </svg>
-                    </a>
+                <div class="header__group">
                     <button data-popup="callback" class="header__btn popup-link">Заказать звнок</button>
+                    <div class="header__group-svg">
+                        <a href="#" class="header__search-btn">
+                            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.4217 8.43438C13.1433 9.86316 12.4712 11.0735 11.3876 12.0488C11.26 12.1637 11.2712 12.2307 11.3597 12.3583C12.3344 13.7682 13.3026 15.1829 14.2742 16.5944C14.3929 16.7667 14.4761 16.9439 14.4353 17.1603C14.3842 17.4324 14.2248 17.6113 13.9614 17.6839C13.6974 17.757 13.4683 17.6808 13.287 17.4743C13.2384 17.419 13.1991 17.3551 13.1571 17.2939C12.1941 15.8922 11.2298 14.492 10.2726 13.0865C10.1848 12.9574 10.1231 12.9431 9.98562 13.0133C5.738 15.1783 0.64967 12.1356 0.552181 7.37428C0.478178 3.79471 3.32856 0.816864 6.90013 0.741726C10.6734 0.662293 13.7151 3.79415 13.5294 7.57134C13.5152 7.86085 13.4905 8.15008 13.4217 8.43438ZM12.1368 8.16896C12.6512 5.36183 10.7819 2.65381 7.97674 2.14195C5.17629 1.63151 2.47594 3.48902 1.95595 6.28466C1.43466 9.08721 3.30003 11.8017 6.10398 12.3199C8.90953 12.8384 11.6227 10.9712 12.1368 8.16896Z" fill="#353535"/>
+                            </svg>
+                        </a>
+                    </div>
                     <button class="header__burger" style="background: transparent;">
                         <img src="./assets/img/Group 76.png" alt="menu">
                     </button>
@@ -72,7 +74,7 @@
     <div class="mobile-nav">
         <div class="mobile-nav__column">
             <a class="mobile__logo">
-                <img src="./assets/img/logo.png" alt="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
             </a>
             <svg class="mobile-nav__cross" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.296 7.43198L7.43195 22.296" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
@@ -147,8 +149,8 @@
                         </ul>
                     </nav>
 					<section class="manufacter-video__group">
-						<video id="video" poster="./assets/img/33.png">
-							<source src="./assets/video/sample-5s.mp4" type="video/mp4">
+						<video id="video" poster="./assets/img/video_preview.png">
+							<source src="./assets/video/v.mp4" type="video/mp4">
 						</video>
 						<svg class="video-btn" width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M22.2397 57.5868C22.0155 57.5651 22.4567 56.596 21.3212 56.4875L17.0832 56.0825C16.0997 55.9885 16.3094 57.0227 16.0924 57.001H16.0273L16.2805 54.3396C16.4757 52.3073 17.6256 50.7163 19.7446 50.9188C20.8801 51.0272 22.84 51.8951 22.5652 54.7373L22.2903 57.6012H22.2325L22.2397 57.5868ZM21.502 55.6124C22.0589 55.663 22.3627 55.4388 22.4133 54.8747L22.435 54.6505C22.5579 53.3488 21.9649 52.1048 19.7157 51.8879C17.8498 51.7071 16.6204 52.3797 16.4251 54.4336L16.36 55.1206L21.4948 55.6124H21.502Z" fill="white"/>
@@ -183,7 +185,7 @@
 							<g filter="url(#filter0_d_296_389)">
 							<circle cx="59" cy="57" r="21" fill="#F5F4F4"/>
 							</g>
-							<path d="M66.4498 56.0156L56.6411 50.1542C55.9075 49.716 55 50.2638 55 51.1403V62.863C55 63.7395 55.9151 64.2794 56.6411 63.849L66.4498 57.9877C67.1834 57.5494 67.1834 56.4617 66.4498 56.0234V56.0156Z" fill="#353535"/>
+							<path class="fig" d="M66.4498 56.0156L56.6411 50.1542C55.9075 49.716 55 50.2638 55 51.1403V62.863C55 63.7395 55.9151 64.2794 56.6411 63.849L66.4498 57.9877C67.1834 57.5494 67.1834 56.4617 66.4498 56.0234V56.0156Z" fill="#353535"/>
 							<defs>
 							<filter id="filter0_d_296_389" x="18" y="16" width="82" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -411,7 +413,7 @@
                 </div>
                 <div class="footer__contacts">
                     <a href="#" class="footer__logo">
-                        <img src="./assets/img/Layer_1.png" alt="logo">
+                        <img src="./assets/img/layer_1.svg" alt="logo">
                     </a>
                     <a class="footer__phone" href="tel:+79195172665">+7 (919) 517-26-65</a>
                     <a class="footer__mail" href="mailto:info@dandeleon.biz">info@dandeleon.biz</a>
@@ -462,7 +464,7 @@
                         </ul>
                     </nav>
                     <a href="./index.html" class="header__logo">
-                        <img src="./assets/img/logo.png" alt="logo">
+                        <img src="./assets/img/logo.svg" alt="logo">
                     </a>    
                     <div class="header__group">
                         <div class="header__group-svg">

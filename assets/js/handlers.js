@@ -174,3 +174,29 @@ if(manufacterVideoBtn && video) {
         }
     });
 }
+
+const producRadioBtns = document.querySelectorAll('.product__radio-btns span');
+if(producRadioBtns.length > 0) {
+    producRadioBtns.forEach(span => {
+        span.addEventListener('click', function() {
+            const radioColor = window.getComputedStyle(span).getPropertyValue('--radio-color');
+            
+            
+
+            switch(radioColor) {
+                case 'rgba(9, 15, 151, 1)':
+
+                    break;
+                case 'rgba(239, 205, 152, 1)':
+                    
+                    break;
+                case 'rgba(255, 255, 255, 1)':
+                    
+                    break;
+                case 'rgba(0, 0, 0, 1)':
+                    
+                    break;
+            }
+        });
+    });
+}

@@ -1,5 +1,6 @@
 @font-face { font-family: 'Din Pro Lite'; src: url(../fonts/dinpro_light.otf); font-weight: 300; }
 @font-face { font-family: 'Din Pro Medium'; src: url(../fonts/dinpro_medium.otf); font-weight: 500; }
+@font-face { font-family: 'Cannonade'; src: url(../fonts/Cannonade.ttf); font-weight: 500; }
 
 * { padding: 0; margin: 0; border: 0; }
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

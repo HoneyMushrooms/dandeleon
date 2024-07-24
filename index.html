@@ -37,7 +37,7 @@
                     </ul>
                 </nav>
                 <a href="#" class="header__logo">
-                    <img src="./assets/img/logo.png" alt="logo">
+                    <img src="./assets/img/logo.svg" alt="logo">
                 </a>    
                 <div class="header__group-main">
                     <a href="#" class="header__search-btn">
@@ -57,7 +57,7 @@
     <div class="mobile-nav">
         <div class="mobile-nav__column">
             <a class="mobile__logo">
-                <img src="./assets/img/logo.png" alt="logo">
+                <img src="./assets/img/logo.svg" alt="logo">
             </a>
             <svg class="mobile-nav__cross" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.296 7.43198L7.43195 22.296" stroke="#2C2C2C" stroke-width="1.3" stroke-linecap="round"/>
@@ -120,7 +120,9 @@
 
     <main style="overflow-x: hidden;">
         <section class="video">
-            <img src="./assets/img/Rectangle.png" class="video-block">
+            <video class="video-block" playsinline autoplay muted loop>
+                <source src="./assets/video/v.mp4" type="video/mp4">
+            </video>
             <div class="video__group">
                 <h1 class="video__title">DANDELEON PROJECT</h1>
                 <a href="./catalog.html" class="video__btn">КАТАЛОГ</a>
@@ -142,16 +144,15 @@
                 <div class="main-products__column">
                     <div class="main-products__header">
                         <p class="main-products__text">FW лето</p>
-    
+                        
                         <div class="main-products__btns">
-                            <svg class="swiper-button-prev" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.27848 10.6792L8.89747 19.6419C9.27342 20.1167 9.87215 20.1167 10.2481 19.6419L11 18.8604L3.20253 10.6792C2.82658 10.2848 2.82658 9.73691 3.20253 9.26211L11 1.1613L10.2481 0.299364C9.87215 -0.0950852 9.27342 -0.0950853 8.89747 0.299364L0.278481 9.26211C-0.0905066 9.73691 -0.0905067 10.2848 0.27848 10.6792Z" fill="white"/>
+                            <svg class="swiper-button-prev" width="11" height="20" viewBox="0 0 11 20" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.27848 10.6792L8.89747 19.6419C9.27342 20.1167 9.87215 20.1167 10.2481 19.6419L11 18.8604L3.20253 10.6792C2.82658 10.2848 2.82658 9.73691 3.20253 9.26211L11 1.1613L10.2481 0.299364C9.87215 -0.0950852 9.27342 -0.0950853 8.89747 0.299364L0.278481 9.26211C-0.0905066 9.73691 -0.0905067 10.2848 0.27848 10.6792Z" fill="black"/>
                             </svg>
-                            <svg class="swiper-button-next" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7215 9.3208L2.10253 0.358052C1.72658 -0.116747 1.12785 -0.116747 0.751899 0.358052L0 1.13964L7.79747 9.3208C8.17342 9.71525 8.17342 10.2631 7.79747 10.7379L0 18.8387L0.751899 19.7006C1.12785 20.0951 1.72658 20.0951 2.10253 19.7006L10.7215 10.7379C11.0905 10.2631 11.0905 9.71525 10.7215 9.3208Z" fill="white"/>
+                            <svg class="swiper-button-next" width="11" height="20" viewBox="0 0 11 20" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7215 9.3208L2.10253 0.358052C1.72658 -0.116747 1.12785 -0.116747 0.751899 0.358052L0 1.13964L7.79747 9.3208C8.17342 9.71525 8.17342 10.2631 7.79747 10.7379L0 18.8387L0.751899 19.7006C1.12785 20.0951 1.72658 20.0951 2.10253 19.7006L10.7215 10.7379C11.0905 10.2631 11.0905 9.71525 10.7215 9.3208Z" fill="black"/>
                             </svg>
                         </div>
-                            
                     </div>
                     
                     <div class="swiper main-products__swiper">
@@ -290,27 +291,27 @@
             <div class="main-categories__row row-top">
                 <a href="#" class="main-categories__photo-1">
                     <img src="./assets/img/R3 1.png" alt="category">
-                    <p class="main-categories__text">Платья и сарафаны</p>
+                    <p class="main-categories__text"><span>Платья</span> и сарафаны</p>
                 </a> 
                 <a href="#" class="main-categories__photo-2" style="margin-bottom: -1px;">
                     <img src="./assets/img/R6 1.png" alt="category">
-                    <p class="main-categories__text">Куртки и бомберы</p>
+                    <p class="main-categories__text"><span>Куртки</span> и бомберы</p>
                 </a>
             </div>
             <div class="main-categories__row row-bottom">
                 <div class="main-categories__row-inside">
                     <a href="#" class="main-categories__photo-3">
                         <img src="./assets/img/Mask group.png" alt="category">
-                        <p class="main-categories__text">Рубашки и блузы</p>
+                        <p class="main-categories__text"><span>Рубашки</span> и блузы</p>
                     </a>
                     <a href="#" class="main-categories__photo-4">
                         <img src="./assets/img/R5 1.png" alt="category">
-                        <p class="main-categories__text">Брюки и шорты</p>
+                        <p class="main-categories__text"><span>Брюки</span> и шорты</p>
                     </a>
                 </div>
                 <a href="#" class="main-categories__photo-5">
                     <img src="./assets/img/R4 1.png" alt="category">
-                    <p class="main-categories__text">Костюмная группа</p>
+                    <p class="main-categories__text"><span>Костюмная</span> группа</p>
                 </a>
             </div>
         </section>
@@ -332,7 +333,7 @@
         <section class="info-2">
             <div class="info-2__container">
                 <div class="info-2__imgs">
-                    <img src="./assets/img/Layer_1.png" alt="img">
+                    <img src="./assets/img/Layer_1.svg" alt="img">
                     <img src="./assets/img/Mas3 group.png" alt="img">
                     <img src="./assets/img/Mask group (1).png" alt="img">
                 </div>
@@ -493,7 +494,7 @@
                 </div>
                 <div class="footer__contacts">
                     <a href="#" class="footer__logo">
-                        <img src="./assets/img/Layer_1.png" alt="logo">
+                        <img src="./assets/img/layer_1.svg" alt="logo">
                     </a>
                     <a class="footer__phone" href="tel:+79195172665">+7 (919) 517-26-65</a>
                     <a class="footer__mail" href="mailto:info@dandeleon.biz">info@dandeleon.biz</a>
@@ -544,7 +545,7 @@
                         </ul>
                     </nav>
                     <a href="./index.html" class="header__logo">
-                        <img src="./assets/img/logo.png" alt="logo">
+                        <img src="./assets/img/logo.svg" alt="logo">
                     </a>    
                     <div class="header__group">
                         <div class="header__group-svg">

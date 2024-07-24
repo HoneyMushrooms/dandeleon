@@ -19,14 +19,13 @@
 
 .catalog-category__row {
     display: flex;
-    gap: 10px;
+    align-items: start;
 }
 
 .catalog-category__group {
     display: flex;
     gap: 39px;
     align-items: center;
-    margin-right: 12px;
 }
 
 .catalog-category__group span {
@@ -41,6 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-right: 39px;
 } 
 
 .catalog-category__tabs a {
@@ -65,8 +65,8 @@
 .catalog-category__switch {
     margin-left: auto;
     display: flex;
-    align-items: center;
     gap: 10px;
+    margin-top: 9px;
 }
 
 .catalog-category__title {
@@ -79,8 +79,9 @@
 .sort-dropdown {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     position: relative;
+    white-space: nowrap;
 }
 
 .sort-drop__btn {
@@ -92,12 +93,14 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 18.58px;
+    margin-top: 11px;
+    margin-right: 10px;
 }
 
 .sort-dropdown__content {
-    width: 120%;
+    width: calc(110% - 10px);
     top: 100%;
-    left: -10%;
+    left: -5%;
     z-index: 10;
     display: none;
     position: absolute;
@@ -106,7 +109,7 @@
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 5;
-    padding-inline: 15px;
+    padding-inline: 10px;
 }
 
 .sort-dropdown__content a {
@@ -125,7 +128,8 @@
     }
     
     .catalog-category__group,
-    .catalog-category__switch {
+    .catalog-category__switch,
+    .catalog-category__filter-btn {
         display: none;
     }
 
@@ -207,10 +211,9 @@
 .catalog-description-bottom p,
 .catalog-description-top p {
     display: block;
-    max-width: 1260px;
-    font-size: 12px;
     font-weight: 300;
-    line-height: 14.87px;
+    font-size: clamp(1rem, 0.9617rem + 0.1361vw, 1.125rem);
+    line-height: clamp(1.125rem, 1.0427rem + 0.2925vw, 1.39375rem);
 }
 
 .minus path:nth-child(1) {
@@ -286,6 +289,11 @@
 
 .catalog-category__filter-btn {
     background: white;
+    margin-right: 22px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.58px;
 }
 
 .btn-scroll-top {
@@ -316,10 +324,13 @@
     transform: translateX(-50%);
     border-radius: 3px;
     border: 0.5px solid rgba(44, 44, 44, 1);
-    padding: 8px 25px;
+    padding: 12px 30px;
     text-transform: uppercase;
     background: white;
     color: rgba(44, 44, 44, 1);
+    font-family: DIN Pro Medium;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .filter, .description {
