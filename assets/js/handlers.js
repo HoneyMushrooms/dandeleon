@@ -181,20 +181,26 @@ if(producRadioBtns.length > 0) {
         span.addEventListener('click', function() {
             const radioColor = window.getComputedStyle(span).getPropertyValue('--radio-color');
             
-            
+            let images = '';
+
+            if (window.screen.availWidth > 1070) {
+                images = document.querySelectorAll('.product__imgs img');
+            } else {
+                images = document.querySelectorAll('.swiper-slide img');
+            }
 
             switch(radioColor) {
                 case 'rgba(9, 15, 151, 1)':
-
+                    images.forEach(img => img.src = `./assets/img/33.png`);
                     break;
                 case 'rgba(239, 205, 152, 1)':
-                    
+                    images.forEach(img => img.src = `./assets/img/R6 1.png`);
                     break;
                 case 'rgba(255, 255, 255, 1)':
-                    
+                    images.forEach(img => img.src = `./assets/img/R5 1.png`);
                     break;
                 case 'rgba(0, 0, 0, 1)':
-                    
+                    images.forEach(img => img.src = `./assets/img/image 2.png`);
                     break;
             }
         });

@@ -256,6 +256,7 @@
     }
 
     .catalog-product-card__btn-like {
+        display: none;
         width: 13px;
         height: 11px;
         top: 8px;

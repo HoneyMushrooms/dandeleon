@@ -111,7 +111,7 @@
 
 .blog-item__title {
     font-family: PF Regal Display Pro;
-    font-size: clamp(1rem, 0.9426rem + 0.2041vw, 1.1875rem);
+    font-size: clamp(1.125rem, 1.1059rem + 0.068vw, 1.1875rem);
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 10px;
@@ -119,9 +119,9 @@
 }
 
 .blog-item__text {
-    font-size: clamp(0.75rem, 0.6543rem + 0.3401vw, 1.0625rem);
+    font-size: clamp(1rem, 0.9809rem + 0.068vw, 1.0625rem);
     font-weight: 300;
-    line-height: clamp(0.929375rem, 0.8109rem + 0.4211vw, 1.31625rem);
+    line-height: clamp(1.125rem, 1.0676rem + 0.2041vw, 1.3125rem);
     margin-bottom: clamp(1rem, 0.9235rem + 0.2721vw, 1.25rem);
     color: rgba(53, 53, 53, 1);
 }
