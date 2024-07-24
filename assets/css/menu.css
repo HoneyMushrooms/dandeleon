@@ -1138,3 +1138,7 @@
         transform: scale(1.2);
     }
 } 
+
+.header__btn-like {
+    display: none;
+}
