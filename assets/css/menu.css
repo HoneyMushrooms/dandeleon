@@ -268,13 +268,25 @@
 .main-products__btns .swiper-button-next, 
 .main-products__btns .swiper-button-prev {
     position: relative;
+    top: -2px;
     width: 11px;
     height: 19px;
+}
+
+.main-products__btns .swiper-button-next {
+    right: 0;
 }
 
 @media (max-width: 768px) {
     .main-products-card {
         width: 128.46px !important;
+    }
+
+    .main-products__btns .swiper-button-next, 
+    .main-products__btns .swiper-button-prev {
+        top: 10px;
+        width: 4.28px;
+        height: 7.78px;
     }
     
     .product-card {
